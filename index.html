@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <div class="Form-Details">
+        <h1 id="title">Form Details</h1>
+        <p id="description">DOM Manipulation with Forms</p>
+    </div>
+    <form id="form">
+        <div class="form-group">
+                <p class="first-name">First Name</p>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your firstname" required></br>
+                <p class="last-name">Last Name</p>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your lastname" required></br>
+                <p class="address">Address</p></br>
+                <textarea id="address" rows=5 cols=166 placeholder="Enter your address"></textarea></br>
+                <p class="pincode">Pincode</p>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required></br>
+                <p class="Gender">Gender</p>
+                <input type="radio" id="gender" value="male" name="gender" />
+                <label for="male">Male</label>
+                <input type="radio" id="gender" value="male" name="gender"/>
+                <label for="female">Female</label></br>
+                <p class="foods">Choice of Food</p>
+                <div class="choices">
+                    <input type="checkbox" id="choice1" value="Parotta">
+                    <label class="Parotta">Parotta</label>
+                    <input type="checkbox" id="choice2" value="Noodles">
+                    <label class="Noodles">Noodles</label>
+                    <input type="checkbox" id="choice3" value="Butter Naan">
+                    <label class="Naan">Butter Naan</label>
+                    <input type="checkbox" id="choice4" value="Pasta">
+                    <label class="Pasta">Pasta</label>
+                    <input type="checkbox" id="choice5" value="Biryani">
+                    <label class="Meals">Biryani</label>
+                 </div></br>
+                    <label class="state">State</label>
+                    <input type="text" id="state" placeholder="Enter your state"></br>
+                    <label class="country">Country</label>
+                    <input type="text" id="country" placeholder="Enter your Country"></br>
+                <input type="button" class="btn btn-primary" id="submit" value="Submit" onclick={validate()}>
+        </div>
+    </form>
+            
+    <div class="table">
+       <table class="table" id="data">
+            <thead>
+                <tr>
+                     <th scope="col" class="first1">First Name</th>
+                     <th scope="col" class="last1">Last Name</th>
+                     <th scope="col" class="address1">Address</th>
+                     <th scope="col" class="pincode1">Pincode</th>
+                     <th scope="col" class="gender1">Gender</th>
+                     <th scope="col" class="choice10">Choice of Food</th>
+                     <th scope="col" class="state1">State</th>
+                     <th scope="col" class="country1">Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+       </table>
+    
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    
+    
+</body>
+</html>
